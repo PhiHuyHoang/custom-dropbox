@@ -21,8 +21,7 @@
   $('form input').change(function () {
     $('form p').text(this.files.length + " file(s) selected");
     this.files.forEach(function(file) {
-    console.log(file.name);
-  });
+    console.log(file);
 });
 
 
