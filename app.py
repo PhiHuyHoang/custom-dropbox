@@ -71,7 +71,7 @@ def login():
             if registeredUser != None and registeredUser.password == password:
                 print('Logged in..')
                 login_user(registeredUser)
-                return render_template('choose2.html')
+                return render_template('choose.html')
             else:
                 return abort(401)
         else:
@@ -108,7 +108,7 @@ def upload_file():
 
         return redirect('/file')
 
-    return render_template('index.html')
+    return render_template('choose2.html')
 
 @app.route('/file')
 @login_required
