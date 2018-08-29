@@ -124,5 +124,7 @@ def all_file():
     return render_template('every_file.html', files=files)
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.getenv('PORT', 8000))
+    print("Starting app on port %d" % port)
+app.run(debug=False, port=port, host='0.0.0.0')
 
