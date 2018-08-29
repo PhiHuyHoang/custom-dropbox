@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
-
 body{
 	margin: 0;
 	padding: 0;
@@ -15,12 +12,12 @@ body{
 	position: absolute;
 	top: -20px;
 	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
-	background-size: cover;
+	right: -0px;
+	bottom: -0px;
+	background-image: url(https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	 background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	-webkit-filter: blur(5px);
 	z-index: 0;
 }
@@ -30,9 +27,8 @@ body{
 	top: -20px;
 	left: -20px;
 	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
+	<!--bottom: -40px;-->
+	background-size: cover;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
 	z-index: 1;
 	opacity: 0.7;
@@ -41,7 +37,7 @@ body{
 .header{
 	position: absolute;
 	top: calc(50% - 35px);
-	left: calc(50% - 255px);
+	left: calc(50% - 300px);
 	z-index: 2;
 }
 
@@ -94,7 +90,7 @@ body{
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -109,11 +105,11 @@ body{
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=submit]:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=submit]:active{
 	opacity: 0.6;
 }
 
@@ -127,7 +123,7 @@ body{
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=submit]:focus{
 	outline: none;
 }
 
