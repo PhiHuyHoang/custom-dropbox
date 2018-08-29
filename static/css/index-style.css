@@ -1,6 +1,6 @@
 body{
 
-    background-image: url('https://images.pexels.com/photos/1133966/pexels-photo-1133966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url(image/upload.jpeg);
      min-height: 100%;
      opacity: 0.7;
      background-attachment: fixed;
