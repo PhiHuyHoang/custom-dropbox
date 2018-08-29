@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+        font: normal 18px/27px menlo, monospace, sans-serif;
+        color: #777;
+
+        }
+.unicode-list li {list-style: none; border-bottom: solid 1px #ccc;}
+.link-list li {font: 300 16px/27px helvetica;}
+:before {color: #A0002E; display: inline-block; font: normal 20px/20px helvetica; width: 30px; }
+a {color: dodgerblue;}
+
+.unicode-list
+{
+padding : 0px;
+}
+    </style>
+</head>
+<ul class="unicode-list">
+    {% for file in files %}
+    <li><a href="static/download/{{ file }}">{{ file }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
