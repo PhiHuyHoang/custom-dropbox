@@ -19,7 +19,18 @@
     <script>
       $(document).ready(function(){
   $('form input').change(function () {
-    $('form p').text(this.files.length + " file(s) selected");
+    if(this.files.length == 1)
+    {
+      $('form p').text(this.files[0].name);
+    }
+    else if(this.files.length >= 2)
+    {
+      var number_of_files = this.files.length-1;
+    for (index = 0; index < this.files.length; ++index) {
+    $('form p').text(this.files[0].name + " and "+number_of_files+" other files selected");
+}
+  }
+});
 });
     </script>
 
