@@ -9,8 +9,20 @@ body{
      background-size: cover;
  }
 
- .every-file {
-  font: 300 16px/27px helvetica;
+ a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 
