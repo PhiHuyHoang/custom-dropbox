@@ -9,22 +9,6 @@ body{
      background-size: cover;
  }
 
- a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
 
  form{
    position: absolute;
@@ -75,3 +59,21 @@ a:active {
    border:0;
  }
  
+ a:link {
+  text-decoration: none;
+  background-color: yellow;
+}
+
+a:visited {
+  text-decoration: none;
+  background-color: cyan;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: cyan;
+}
+
+a:active {
+  text-decoration: underline;
+}
