@@ -71,7 +71,7 @@ def login():
             if registeredUser != None and registeredUser.password == password:
                 print('Logged in..')
                 login_user(registeredUser)
-                return render_template('choose.html')
+                return render_template('choose2.html')
             else:
                 return abort(401)
         else:
