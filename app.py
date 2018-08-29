@@ -108,7 +108,7 @@ def upload_file():
 
         return redirect('/file')
 
-    return render_template('choose2.html')
+    return render_template('index.html')
 
 @app.route('/file')
 @login_required
