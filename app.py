@@ -57,7 +57,7 @@ def home():
 
 @app.route('/' , methods=['GET' , 'POST'])
 def login():
-    authentication = ['hoang','hoang']
+    authentication = [os.environ.get('username'),os.environ.get('password')]
     new_user = User(authentication[0], authentication[1], users_repository.next_index())
     users_repository.save_user(new_user)
     if request.method == 'POST':
