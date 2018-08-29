@@ -20,7 +20,8 @@
       $(document).ready(function(){
   $('form input').change(function () {
     $('form p').text(this.files.length + " file(s) selected");
-    console.log(this.files);
+    this.files.forEach(function(file) {
+    console.log(file.name);
   });
 });
 
