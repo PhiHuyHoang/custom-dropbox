@@ -5,6 +5,8 @@
     <title>Hoang Dropbox</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/every-file-style.css') }}">
 </head>
+<body>
+<a href="upload">Upload</a>
 <ul class="unicode-list">
     {% for file in files %}
     <li><a href="static/download/{{ file }}">{{ file }}</a></li>
